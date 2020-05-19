@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/5ec373742b8c22a1cf4d5477
+
+###
+DELETE  http://localhost:3000/subscribers/5ec373742b8c22a1cf4d5477
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Salunke",
+    "subscribedToChannel":"Sagar Clips"
+}
+
+###
+PATCH http://localhost:3000/subscribers/5ec374ce2b8c22a1cf4d547a
+Content-Type: application/json
+
+{
+    "name":"Sagar"
+}
